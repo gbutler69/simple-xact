@@ -1,0 +1,20 @@
+type,       client,          tx,      amount
+deposit,         1,         100,     1000.00
+deposit,         2,         200,     2000.00
+deposit,         3,         300,     3000.00
+deposit,         4,         400,     4000.00
+deposit,         3,         500,     5000.00
+deposit,         1,         600,     6000.00
+deposit,         3,         700,     7000.00
+deposit,         4,         800,     8000.00
+deposit,         2,         900,     9000.00
+deposit,         4,        1000,      100.10
+withdrawal,      1,        2000,      100.20
+withdrawal,      4,        3000,      100.30
+withdrawal,      3,        4000,      100.40
+withdrawal,      4,        5000,      100.50
+dispute,         2,         200
+dispute,         4,         400
+resolve,         2,         200
+chargeback,      4,         400
+dispute,         3,         300

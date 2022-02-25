@@ -1,6 +1,7 @@
 use std::{error, io};
 
 use bigdecimal::BigDecimal;
+use csv::Trim;
 use serde::Deserialize;
 
 use crate::bank::Transaction;
@@ -16,6 +17,7 @@ pub fn processs_transactions_from_csv<ProcessCallback>(
 {
     for record in csv::ReaderBuilder::new()
         .flexible(true)
+        .trim(Trim::All)
         .from_reader(reader)
         .deserialize::<TransactionRecord>()
     {
